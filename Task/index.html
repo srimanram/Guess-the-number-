@@ -1,4 +1,4 @@
-<input id="in">
+<!-- <input id="in">
 <button onclick="click()">btn</button>
 <h1 id="result"></h1>
 <h2>hi</h2>
@@ -8,5 +8,16 @@
     function click()
     {
         result.textContent=inputbox.value;
+    }
+</script> -->
+
+<button onclick="update()">ADD</button>
+<div id="result"></div>
+<script>
+    var div=document.getElementById("result")       
+    function update(){
+        var head=document.createElement("h1")
+        head.textContent="Hello"
+        div.append(head)
     }
 </script>
